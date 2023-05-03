@@ -1,4 +1,4 @@
-#include <unistd.h> //voor linux
+#include <unistd.h>
 #include <iostream>
 #include "Led.h"
 
@@ -10,8 +10,8 @@ using namespace std;
 int main() {
 
     cout<<"Hi NSE"<<endl;
-    Led rood(RODELED);
-    Led geel(GELELED);
+    Led rood(RODELED, "Rood", "Sarah Teixeira");
+    Led geel(GELELED, "Geel");
     Led groen(GROENELED);
 
     groen.zetAan();
@@ -25,4 +25,26 @@ int main() {
     rood.zetUit();
 
     cout<<"einde"<<endl;
+
+    //return 0;
 }
+
+
+// int defaultMain(){
+//     cout<<"Hi NSE"<<endl;
+//     Led rood(RODELED);
+//     Led geel(GELELED);
+//     Led groen(GROENELED);
+
+//     groen.zetAan();
+//     usleep(1000000);
+//     groen.zetUit();
+//     geel.zetAan();
+//     usleep(1000000);
+//     geel.zetUit();
+//     rood.zetAan();
+//     usleep(1000000);  
+//     rood.zetUit();
+
+//     cout<<"einde"<<endl;
+// }

@@ -1,6 +1,21 @@
 #include "Led.h"
 #include "gpiofuncties.h"
 
+// #include <unistd.h>
+// #include <iostream>
+// #include "Led.h"
+
+using namespace std;
+// #define RODELED 135
+// #define GROENELED 132
+// #define GELELED 134
+
+Led::Led(int nr, string k, string author) : pinNr(nr), kleur(k), eigenaar(author) {
+
+}
+Led::Led(int nr, string k) : pinNr(nr), kleur(k) {
+
+}
 Led::Led(int nr) : pinNr(nr) {
 
 }
